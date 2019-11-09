@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MHRS.XamarinElementPage">
+    <ContentPage.Content>
+        <StackLayout BindingContext="{x:Reference slider}">
+            <BoxView Color="Red" Opacity="{Binding Value}"/>
+            <Label x:Name="myLabel" Text="{Binding Value,StringFormat='Value is {0:F2}'}" Opacity="{Binding Value}" />
+            <Entry x:Name="myEnrty"/>
+            <Button x:Name="myButton" Text="Push Me!" Clicked="MyButton_Clicked"/>
+            <Slider x:Name="slider"/>
+            <DatePicker x:Name="myDatePicker"/>
+            <TimePicker x:Name="myTimePicker"/>
+            <Picker x:Name="myPicker" SelectedIndexChanged="MyPicker_SelectedIndexChanged"/>
+            <Switch x:Name="mySwitch"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

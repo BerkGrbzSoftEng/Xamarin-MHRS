@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MHRS.AbsoluteLayoutPage">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <BoxView Color="LightBlue" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All"/>
+            <BoxView Color="White" AbsoluteLayout.LayoutBounds="0.5,0.1,100,100 " AbsoluteLayout.LayoutFlags="PositionProportional"/>
+            <Image x:Name="resim" Source="logo.jpg" AbsoluteLayout.LayoutBounds="0.5,0.1,100,100 " AbsoluteLayout.LayoutFlags="PositionProportional" IsVisible="False"/>
+            <Button BackgroundColor="DarkGray" Text="Show Image" TextColor="White" AbsoluteLayout.LayoutBounds="0,1,1,50" AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional" Clicked="Button_Clicked"  />
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

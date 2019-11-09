@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MHRS"
+             x:Class="MHRS.MainPage">
+
+    <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="Red" Orientation="Vertical">
+        <!-- Place new controls here -->
+        <StackLayout BackgroundColor="Green" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+            <Button HeightRequest="40" HorizontalOptions="StartAndExpand" BackgroundColor="Brown" Text="Push Me"/>
+            <Entry HeightRequest="40" HorizontalOptions="CenterAndExpand" BackgroundColor="Chocolate" Placeholder="I am placeholder"/>
+            <Switch HeightRequest="40" HorizontalOptions="EndAndExpand" BackgroundColor="Pink"/>
+        </StackLayout>
+        <Label Text="Welcome to Xamarin.Forms!" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+        <StackLayout BackgroundColor="LightCyan" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

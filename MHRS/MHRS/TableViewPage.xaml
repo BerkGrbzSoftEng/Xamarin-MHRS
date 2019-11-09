@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MHRS.TableViewPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <TableView Intent="Form">
+                <TableRoot>
+                    <TableSection Title="My Settings">
+                        <SwitchCell Text="Bilinmeyen Numaralar İzin" On="False"/>
+                        <EntryCell Text="Bir Mesaj Bırakın"/>
+                        <TextCell Text="Developper Actions" Detail="Join"/>
+                        <ImageCell ImageSource="logo.png" Text="Giris Logosu" Detail="Giris"/>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="2*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <Image Source="logo.png" Aspect="Fill" Grid.Row="0" Grid.Column="0"/>
+                                <Label Text="I am not Login Page" Grid.Row="0" Grid.Column="1"/>
+                                <Switch IsToggled="True" Grid.Row="0" Grid.Column="2"/>
+                            </Grid>
+                        </ViewCell>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
